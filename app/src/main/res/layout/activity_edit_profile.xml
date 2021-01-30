@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    android:background="@color/purple_500">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadows"
+        android:layout_below="@+id/backbtn"
+        android:layout_marginTop="13dp"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/app_name"
+        app:tint="@color/textColor"
+        android:id="@+id/backbtn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:text="@string/beranda"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mapicon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/userpic"
+            android:layout_margin="10dp"
+            android:id="@+id/user"
+            android:padding="5dp"
+            android:background="@drawable/img_back"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="Anggara Habib"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/user"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:id="@+id/name"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="User : @anggaraha"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/username"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:id="@+id/uname"
+            >
+            <TextView
+                android:padding="20sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:padding="20sp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:text="anggaraha"
+                android:gravity="end" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/uname"
+            android:id="@+id/email"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:padding="20sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:padding="20sp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:text="anggaraha@gmail.com"
+                android:gravity="end" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/email"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            >
+            <TextView
+                android:padding="20sp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset Password"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:text=">"
+                android:gravity="end" />
+        </LinearLayout>
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back"
+            android:layout_above="@+id/bottombar"
+            android:layout_margin="10dp"
+            android:text="Selesai"
+            android:textAllCaps="false"
+            android:id="@+id/selasai"
+            android:textColor="@color/textColor"
+            />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottombar"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/navigation_back"
+                android:gravity="center_vertical"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    >
+                    <LinearLayout
+                        android:gravity="center_vertical|center_horizontal"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <ImageView
+
+                            android:id="@+id/btnHome"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/homeblack"
+                            />
+                        <TextView
+                            android:id="@+id/txthome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/beranda"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/pengacara"
+                        android:gravity="center_vertical|center_horizontal"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/law"
+                            android:id="@+id/law"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pengacara"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/search"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cari"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/profile"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Profile"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pengacarimg"
+        android:id="@+id/img"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dian Purwo"
+        android:textSize="14sp"
+        android:textColor="#3B566E"
+        android:layout_toEndOf="@+id/img"
+        android:layout_toRightOf="@+id/img"
+        android:id="@+id/name"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/img"
+        android:drawableStart="@drawable/penga"
+        android:layout_toRightOf="@+id/img"
+        android:drawableLeft="@drawable/penga"
+        android:layout_below="@+id/name"
+        android:drawablePadding="5dp"
+        android:textSize="12sp"
+        android:id="@+id/loc"
+        android:layout_margin="5dp"
+        android:text="Perkara"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rating"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/name"/>
+
+</RelativeLayout>

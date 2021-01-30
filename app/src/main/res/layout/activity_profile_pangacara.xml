@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePangacaraActivity"
+    android:background="@color/purple_500">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadows"
+        android:layout_below="@+id/backbutn"
+        android:layout_marginTop="13dp"
+        android:layout_centerHorizontal="true"
+        />
+    <ImageView
+        android:id="@+id/backbutn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/app_name"
+
+        app:tint="@color/textColor" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:text="Profile Pengacara"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:layout_marginTop="48dp"
+        android:layout_centerHorizontal="true"
+
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mapicon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/app_name" />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/userpic"
+            android:layout_width="152dp"
+            android:layout_height="137dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ryan" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rian Lim"
+            android:layout_below="@+id/userpic"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/name"
+            android:layout_centerHorizontal="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/smallname"
+            android:layout_centerHorizontal="true"
+            android:text="Kriminal,Bisnis, Perdata Umum"
+            android:layout_below="@+id/name"
+            android:textColor="@color/textColor"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/starticon"
+            android:layout_below="@+id/smallname"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/rating"
+            />
+
+        <Button
+            android:id="@+id/calenderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/map"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/btn_back"
+            android:text="Buat Jadwal Pertemuan"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor" />
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="362dp"
+            android:layout_height="238dp"
+            android:layout_above="@+id/bottombar"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mapimg" />
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottombar"
+
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/navigation_back"
+                android:gravity="center_vertical"
+                app:cardUseCompatPadding="true"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    >
+                    <LinearLayout
+                        android:gravity="center_vertical|center_horizontal"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <ImageView
+
+                            android:id="@+id/btnHome"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/homeblack"
+                            />
+                        <TextView
+                            android:id="@+id/txthome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/beranda"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/pengacara"
+                        android:gravity="center_vertical|center_horizontal"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/law"
+                            android:id="@+id/law"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pengacara"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/search"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cari"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/profile"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Profile"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

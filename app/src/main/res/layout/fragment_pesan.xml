@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PesanFragment">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:layout_margin="10dp"
+    android:background="@drawable/navigation_back"
+    android:drawableStart="@drawable/search"
+    android:hint="10 Pesan"
+    android:drawablePadding="10dp"
+    android:drawableLeft="@drawable/search" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesan terbaru"
+            android:padding="10dp"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cntct"
+                android:id="@+id/cntc"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indra"
+                android:layout_toEndOf="@+id/cntc"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:id="@+id/name"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/cntc"
+                android:layout_marginLeft="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due to the Coronavirus pandemic, all..."
+                android:layout_toEndOf="@+id/cntc"
+                android:layout_below="@+id/name"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@+id/cntc"
+                android:layout_marginLeft="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="45 min ago"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cntct"
+                android:id="@+id/cntc1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indra"
+                android:layout_toEndOf="@+id/cntc1"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:id="@+id/name1"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/cntc1"
+                android:layout_marginLeft="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due to the Coronavirus pandemic, all..."
+                android:layout_toEndOf="@+id/cntc1"
+                android:layout_below="@+id/name1"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@+id/cntc1"
+                android:layout_marginLeft="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="45 min ago"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cntct"
+                android:id="@+id/cntc2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indra"
+                android:layout_toEndOf="@+id/cntc2"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:id="@+id/name2"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/cntc2"
+                android:layout_marginLeft="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due to the Coronavirus pandemic, all..."
+                android:layout_toEndOf="@+id/cntc2"
+                android:layout_below="@+id/name2"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@+id/cntc2"
+                android:layout_marginLeft="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="45 min ago"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cntct"
+                android:id="@+id/cntc3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Indra"
+                android:layout_toEndOf="@+id/cntc3"
+                android:layout_marginStart="20dp"
+                android:textSize="16sp"
+                android:id="@+id/name3"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/cntc3"
+                android:layout_marginLeft="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Due to the Coronavirus pandemic, all..."
+                android:layout_toEndOf="@+id/cntc3"
+                android:layout_below="@+id/name3"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@+id/cntc3"
+                android:layout_marginLeft="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="45 min ago"
+                android:layout_alignParentRight="true" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

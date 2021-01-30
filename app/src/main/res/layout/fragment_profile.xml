@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ProfileFragment">
+    <ImageView
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/userpic"
+        android:layout_margin="10dp"
+        android:id="@+id/user"
+        android:padding="5dp"
+        android:background="@drawable/img_back"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Anggara Habib"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/user"
+        android:layout_toRightOf="@+id/user"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/name"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/user"
+        android:layout_toRightOf="@+id/user"
+        android:gravity="center_horizontal"
+        android:text="User : @anggaraha"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/img_back"
+    android:layout_below="@+id/user"
+    android:layout_margin="20dp"
+    android:text="Ubah Profile"
+    android:textColor="@color/purple_500"
+    android:textAllCaps="false"
+    android:id="@+id/btnProfile"
+    />
+    <LinearLayout
+        android:id="@+id/topText"
+        android:gravity="center"
+        android:layout_below="@+id/btnProfile"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="Jadwal Pertemuan"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Pengacara"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topText"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/pic"
+                    android:layout_width="111dp"
+                    android:layout_height="114dp"
+                    android:src="@drawable/ryan" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nov 21,2020/9:00 AM"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/pic"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rian Lim"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@+id/pic"
+                    android:id="@+id/name99"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/pic" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kriminal, Bisnis, Perdata Umum"
+                    android:layout_below="@+id/name99"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_toEndOf="@+id/pic"
+                    android:layout_toRightOf="@+id/pic"
+                    android:layout_marginLeft="10dp" />
+                <Button
+                    android:id="@+id/chatbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAllCaps="false"
+                    android:text="chat"
+                    android:background="@drawable/btn_back"
+                    android:textColor="@color/textColor"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/pic"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/pic1"
+                    android:layout_width="111dp"
+                    android:layout_height="114dp"
+                    android:src="@drawable/mike" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Des 1,2020/9:00 AM"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/pic1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mike"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@+id/pic1"
+                    android:id="@+id/name991"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/pic1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kriminal, Bisnis"
+                    android:layout_below="@+id/name991"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_toEndOf="@+id/pic1"
+                    android:layout_toRightOf="@+id/pic1"
+                    android:layout_marginLeft="10dp" />
+                <Button
+                    android:id="@+id/chatbuttn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAllCaps="false"
+                    android:text="chat"
+                    android:background="@drawable/btn_back"
+                    android:textColor="@color/textColor"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/pic1"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/pic2"
+                    android:layout_width="111dp"
+                    android:layout_height="114dp"
+                    android:src="@drawable/john" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Des 31,2020/9:00 AM"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/pic2"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John"
+                    android:textSize="16sp"
+                    android:layout_toEndOf="@+id/pic2"
+                    android:id="@+id/name992"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/pic2" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kriminal"
+                    android:layout_below="@+id/name992"
+                    android:layout_marginStart="10dp"
+
+                    android:layout_toEndOf="@+id/pic2"
+                    android:layout_toRightOf="@+id/pic2"
+                    android:layout_marginLeft="10dp" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:textAllCaps="false"
+                    android:text="chat"
+                    android:background="@drawable/btn_back"
+                    android:textColor="@color/textColor"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/pic2"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

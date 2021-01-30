@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilePangacaraFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/userphoto"
+            android:layout_width="144dp"
+            android:layout_height="154dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ryan" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rian Lim"
+            android:layout_toEndOf="@+id/userphoto"
+            android:layout_marginTop="40dp"
+            android:textSize="20sp"
+            android:id="@+id/name0"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/userphoto" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/staricon"
+            android:layout_below="@+id/name0"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/userphoto"
+            android:layout_toRightOf="@+id/userphoto" />
+        <LinearLayout
+            android:layout_below="@+id/userphoto"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:id="@+id/belo"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jumiah Perkara"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="200"
+                    android:textAlignment="center"
+                    android:gravity="center" />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Disarankan"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textAlignment="center"
+                    android:gravity="center" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/belo"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textSize="18sp"
+                android:textColor="@color/purple_500"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about"
+                android:includeFontPadding="true"
+                android:padding="20dp"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/sendicon"
+                android:text="Jl. Japaris No. 912 Medan"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                app:drawableStartCompat="@drawable/sendicon"
+                android:drawableStart="@drawable/sendicon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/phone"
+                android:text="+12 345 678 901"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                app:drawableStartCompat="@drawable/phone"
+                android:drawableStart="@drawable/phone"
+                tools:ignore="UseCompatTextViewDrawableXml" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

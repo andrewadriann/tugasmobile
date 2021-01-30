@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomActivity"
+    android:background="#363A44"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/shadows"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="82dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+android:layout_marginTop="100dp"
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:layout_above="@+id/txt"
+            android:layout_marginBottom="60dp"
+            android:layout_width="293dp"
+            android:layout_height="271dp"
+            android:id="@+id/img"
+            android:src="@drawable/image"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="TODO" />
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnMasuk"
+            android:layout_marginBottom="40dp"
+            android:text="Selamat datang di aplikasi FIND LAW, kami\nmembantu anda menemukan pengacara\n diwilayah terdekat"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:id="@+id/txt"
+            android:textSize="14sp"
+            android:gravity="center_horizontal|top" />
+        <Button
+            android:id="@+id/btnMasuk"
+            android:onClick="go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/btn_back"
+            android:text="@string/masuk"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor"
+            android:textSize="18sp"
+            android:layout_marginRight="30dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

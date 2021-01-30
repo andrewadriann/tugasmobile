@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/items"
+        android:id="@+id/itemIcon"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rian Lims"
+        android:textSize="14sp"
+        android:textColor="#3B566E"
+        android:layout_toEndOf="@+id/itemIcon"
+        android:layout_toRightOf="@+id/itemIcon"
+        android:id="@+id/name"
+        android:layout_margin="5dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rating"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/itemIcon"
+        android:drawableStart="@drawable/location"
+        android:layout_toRightOf="@+id/itemIcon"
+        android:drawableLeft="@drawable/location"
+        android:layout_below="@+id/name"
+        android:drawablePadding="5dp"
+        android:textSize="12sp"
+        android:id="@+id/loc"
+        android:layout_margin="5dp"
+        android:text="@string/jakarta"/>
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/itemIcon"
+        android:drawableStart="@drawable/phone"
+        android:layout_toRightOf="@+id/itemIcon"
+        android:drawableLeft="@drawable/phone"
+        android:layout_below="@+id/loc"
+        android:drawablePadding="5dp"
+        android:textSize="12sp"
+        android:layout_margin="5dp"
+        android:text="+12 345 678 901"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_back"
+        android:text="Pesan"
+        android:textAllCaps="false"
+        android:textColor="@color/textColor"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/number"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:padding="10dp"
+        android:id="@+id/topRv"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/pengacara_baru_mendaftar"
+            android:layout_marginTop="30dp"
+            android:textColor="#3B566E"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="61dp"
+                    android:layout_height="57dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/userpic" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/angga"
+                    android:textSize="12sp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="61dp"
+                    android:layout_height="57dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:src="@drawable/habib" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/habib"
+                    android:textSize="12sp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="61dp"
+                    android:layout_height="57dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ijlal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ijlal"
+                    android:textSize="12sp"
+
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="61dp"
+                    android:layout_height="57dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+
+                    android:src="@drawable/andrew" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/andrew"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:id="@+id/viewDivider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/topRv"
+        android:background="#EDF5F3"
+        android:visibility="visible"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/itemIcon1"
+                    android:layout_width="84dp"
+                    android:layout_height="112dp"
+                    android:src="@drawable/ryan" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rian Lims"
+                    android:textSize="14sp"
+                    android:textColor="#3B566E"
+                    android:layout_toEndOf="@+id/itemIcon1"
+                    android:layout_toRightOf="@+id/itemIcon1"
+                    android:id="@+id/name1"
+                    android:layout_margin="5dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/name1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/itemIcon1"
+                    android:drawableStart="@drawable/location"
+                    android:layout_toRightOf="@+id/itemIcon1"
+                    android:drawableLeft="@drawable/location"
+                    android:layout_below="@+id/name1"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:id="@+id/loc1"
+                    android:layout_margin="5dp"
+                    android:text="@string/jakarta"/>
+                <TextView
+                    android:id="@+id/number1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/itemIcon1"
+                    android:drawableStart="@drawable/phone"
+                    android:layout_toRightOf="@+id/itemIcon1"
+                    android:drawableLeft="@drawable/phone"
+                    android:layout_below="@+id/loc1"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:layout_margin="5dp"
+                    android:text="+12 345 678 901"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_back"
+                    android:text="Pesan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/number1"/>
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/itemIcon2"
+                    android:layout_width="84dp"
+                    android:layout_height="112dp"
+                    android:src="@drawable/todung" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Todung M. Lubis"
+                    android:textSize="14sp"
+                    android:textColor="#3B566E"
+                    android:layout_toEndOf="@+id/itemIcon2"
+                    android:layout_toRightOf="@+id/itemIcon2"
+                    android:id="@+id/name2"
+                    android:layout_margin="5dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/name2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/itemIcon2"
+                    android:drawableStart="@drawable/location"
+                    android:layout_toRightOf="@+id/itemIcon2"
+                    android:drawableLeft="@drawable/location"
+                    android:layout_below="@+id/name2"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:id="@+id/loc2"
+                    android:layout_margin="5dp"
+                    android:text="@string/jakarta"/>
+                <TextView
+                    android:id="@+id/number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/itemIcon2"
+                    android:drawableStart="@drawable/phone"
+                    android:layout_toRightOf="@+id/itemIcon2"
+                    android:drawableLeft="@drawable/phone"
+                    android:layout_below="@+id/loc2"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:layout_margin="5dp"
+                    android:text="+12 345 678 901"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_back"
+                    android:text="Pesan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/number2"/>
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/itemIcon3"
+                    android:layout_width="84dp"
+                    android:layout_height="112dp"
+                    android:src="@drawable/john" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John"
+                    android:textSize="14sp"
+                    android:textColor="#3B566E"
+                    android:layout_toEndOf="@+id/itemIcon3"
+                    android:layout_toRightOf="@+id/itemIcon3"
+                    android:id="@+id/name3"
+                    android:layout_margin="5dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/name3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/itemIcon3"
+                    android:drawableStart="@drawable/location"
+                    android:layout_toRightOf="@+id/itemIcon3"
+                    android:drawableLeft="@drawable/location"
+                    android:layout_below="@+id/name3"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:id="@+id/loc3"
+                    android:layout_margin="5dp"
+                    android:text="@string/jakarta"/>
+                <TextView
+                    android:id="@+id/number3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/itemIcon3"
+                    android:drawableStart="@drawable/phone"
+                    android:layout_toRightOf="@+id/itemIcon3"
+                    android:drawableLeft="@drawable/phone"
+                    android:layout_below="@+id/loc3"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:layout_margin="5dp"
+                    android:text="+12 345 678 901"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_back"
+                    android:text="Pesan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/number3"/>
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:padding="20dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/itemIcon"
+                    android:layout_width="84dp"
+                    android:layout_height="112dp"
+                    android:src="@drawable/mike" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mike"
+                    android:textSize="14sp"
+                    android:textColor="#3B566E"
+                    android:layout_toEndOf="@+id/itemIcon"
+                    android:layout_toRightOf="@+id/itemIcon"
+                    android:id="@+id/name"
+                    android:layout_margin="5dp"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rating"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/name"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/itemIcon"
+                    android:drawableStart="@drawable/location"
+                    android:layout_toRightOf="@+id/itemIcon"
+                    android:drawableLeft="@drawable/location"
+                    android:layout_below="@+id/name"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:id="@+id/loc"
+                    android:layout_margin="5dp"
+                    android:text="@string/jakarta"/>
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/itemIcon"
+                    android:drawableStart="@drawable/phone"
+                    android:layout_toRightOf="@+id/itemIcon"
+                    android:drawableLeft="@drawable/phone"
+                    android:layout_below="@+id/loc"
+                    android:drawablePadding="5dp"
+                    android:textSize="12sp"
+                    android:layout_margin="5dp"
+                    android:text="+12 345 678 901"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@drawable/btn_back"
+                    android:text="Pesan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/number"/>
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

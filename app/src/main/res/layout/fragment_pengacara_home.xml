@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PengacaraHomeFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perkara yang sedang dijalani"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/userpic"
+            android:layout_margin="10dp"
+            android:id="@+id/small"
+            />
+
+        <TextView
+            android:id="@+id/tp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/small"
+            android:layout_toRightOf="@+id/small"
+            android:text="Anggara Habib"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="29dp"
+
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/small"
+            android:layout_toRightOf="@+id/small"
+            android:text="Bisnis"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:id="@+id/tp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tp1"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/small"
+            android:layout_toRightOf="@+id/small"
+            android:drawableStart="@drawable/location"
+            android:drawableLeft="@drawable/location"
+            android:drawablePadding="10dp"
+            android:text="Medan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/phone"
+            android:text="+34 567 890 123"
+            android:drawableLeft="@drawable/phone"
+            android:layout_below="@+id/small"
+            android:layout_margin="10dp" />
+        <Button
+            android:id="@+id/chatbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_back"
+            android:text="chat"
+            android:textColor="@color/textColor"
+            android:textAllCaps="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/small"/>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/small1"
+            android:layout_width="101dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/anggi" />
+
+        <TextView
+            android:id="@+id/tp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@+id/small1"
+            android:layout_toRightOf="@+id/small1"
+            android:text="Anggi"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tp4"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="9dp"
+
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/small1"
+            android:layout_toRightOf="@+id/small1"
+            android:text="Perdata"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:id="@+id/tp6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tp5"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/small1"
+            android:layout_toRightOf="@+id/small1"
+            android:drawableStart="@drawable/location"
+            android:drawableLeft="@drawable/location"
+            android:drawablePadding="10dp"
+            android:text="Medan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/phone"
+            android:text="+34 567 890 123"
+            android:drawableLeft="@drawable/phone"
+            android:layout_below="@+id/small1"
+            android:layout_margin="10dp" />
+        <Button
+            android:id="@+id/chatbuttn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_back"
+            android:text="chat"
+            android:textColor="@color/textColor"
+            android:textAllCaps="false"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/small1"/>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
